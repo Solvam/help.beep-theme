@@ -1,0 +1,300 @@
+/*
+footer {
+	display:block;
+}
+*/
+html {
+	min-height:100%;
+	width:100%;
+	position:relative;
+}
+
+body {
+	background-color: rgb(249,249,249);
+	color: #484848;
+	padding-top: 20px;
+	padding-bottom: 200px;
+}
+
+.header {
+	text-align: left;
+	color: #484848;
+	margin-bottom: .5em;
+}
+
+.header .site-title {
+	font-size: 1.6em;
+	margin: 1.005em 0 .335em 0;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+	font-family: "Signika", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header .site-title a {
+	text-decoration: none;
+	color: #378BAC;
+}
+
+.header .site-desc {
+	color: #888;
+	font-weight: 400;
+	max-width: 14em;
+	font-size: 1.3em;
+}
+
+.header .logo {
+	float: right;
+	margin: 20px 0;
+	width: 100px;
+}
+
+.inner-header {
+	min-height: 30px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+.inner-header .arrow-nav {
+	line-height: 30px;
+}
+
+.micro-logo {
+	float:right;
+}
+
+.header .desktop ul {
+	float: right;
+}
+.header ul li {
+		height: auto;
+}
+
+.float-right {
+	float: right;
+	margin-left: 1em;
+}
+
+.footer-logo {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+
+	text-align: center;
+	height: 200px;
+	overflow: hidden;
+	opacity: 0.3;
+}
+
+.header ul li a {
+	font-weight: bold;
+	color: #484848;
+	font-family: "Signika", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Signika", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.pull-right {
+	float: right;
+}
+
+.topics h2 a {
+	text-decoration: none;
+	color: #378BAC;
+	text-transform: none;
+}
+
+.posts-name {
+	text-transform: capitalize;
+	font-weight: bold;
+	margin-top: 1em;
+	font-family: "Signika", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.posts {
+	font-family: verdana,arial,helvetica,sans-serif;
+	
+	padding-left: 1em;
+}
+
+.posts li p{
+	margin-top: 0;
+}
+
+.posts li {
+	margin-bottom: 1em;
+}
+
+.posts li a {
+	color:#378BAC;
+	text-decoration:none;
+}
+
+.post h1 {
+	color: #378BAC
+}
+.post h2 {
+	color: #378BAC;
+}
+
+.post blockquote {
+	border: 1px solid #378BAC;
+	margin: 0;
+	padding: 1em 2em;
+}
+
+.footnote, .updated {
+	font-family: verdana,arial,helvetica,sans-serif;
+	color:#888;
+	font-size:x-small;
+	margin-bottom:0;
+}
+
+.footnote a {
+	color: #888 !important
+}
+
+.footnote a:hover{
+	text-decoration:underline;
+	color:#369;
+}
+
+.footer {
+	position:absolute;
+	z-index:2;
+	height:auto;
+	width:100%;
+	bottom:0;
+}
+
+
+.footer-content {
+	border-top: 1px solid #e3e3e3;
+}
+
+.footer-content a {
+	font-size: 80%;
+	color: #bbb;
+}
+
+.footer-content ul {
+	height: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	display: inline-block;
+	padding-left: 0;
+}
+
+#gototop-btn {
+	display: inline-block;
+	color: #bbb;
+	font-size: 80%;
+}
+
+#foot-name {
+	text-transform: none;
+	font-size: 80%;
+	color: #bbb;
+}
+
+.post {
+	font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+	color:#484848;
+	letter-spacing:normal;
+}
+
+.post h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	letter-spacing:normal;
+}
+
+.post-content {
+	z-index:9;
+	overflow:auto;
+	padding:0;
+	padding-bottom:3em;
+	font-size:16px;
+	line-height:1.4;
+}
+
+.post a {
+	color:#378BAC;
+	text-decoration: none;
+}
+
+.post a:hover {
+	color:#378BAC;
+	text-decoration: underline;
+}
+
+
+.post-title{
+	margin: 2em 0 0.5em 0;
+}
+
+.post-title h1 {
+	font-weight:bold;
+	font-size:39px;
+	line-height: 40px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.help-prev {
+	text-align: left;
+	width: 100%;
+}
+
+.help-next {
+	text-align: right;
+	width: 100%;
+}
+
+.arrow-nav a {
+	text-decoration: none;
+	color: #378BAC;
+}
+
+.max-full-width {
+	max-width: 100%;
+}
+
+
+@media screen and (max-width:767px){
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	#toggle-btn {
+		display: inline-block;
+		float: right;
+		padding: .5em 1em;
+		text-decoration: none;
+		color: #484848;
+		font-weight: bold;
+	}
+	#toggle-content li {
+		clear: both;
+		height: auto;
+		background-color: rgb(249,249,249);
+	}
+	#toggle-home {
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width:768px){
+	.mobile {
+		display:none;
+	}
+	.desktop {
+		display: block;
+	}
+}
