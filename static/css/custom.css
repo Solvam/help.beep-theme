@@ -142,6 +142,42 @@ h1,h2,h3,h4,h5,h6 {
 	color: #378BAC;
 }
 
+body {
+    counter-reset: h1
+}
+
+.numbered-headings h1 {
+    counter-reset: h2
+}
+
+.numbered-headings h2 {
+    counter-reset: h3
+}
+
+.numbered-headings h3 {
+    counter-reset: h4
+}
+
+.numbered-headings h1:before {
+    counter-increment: h1;
+    content: counter(h1) ". "
+}
+
+.numbered-headings ol {
+	counter-reset: item;
+	list-style: none;
+}
+
+.numbered-headings li {
+}
+
+.numbered-headings li:before {
+    counter-increment: item;
+    content: counter(h1) "." counter(item) " ";
+    float: left;
+    margin-left: -2em;
+}
+
 .post blockquote {
 	border: 1px solid #378BAC;
 	margin: 0;
