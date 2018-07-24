@@ -175,7 +175,8 @@ body {
     counter-increment: item;
     content: counter(h1) "." counter(item) " ";
     float: left;
-    margin-left: -2em;
+    margin-left: -2.5em;
+    text-align: right;
 }
 
 .post blockquote {
